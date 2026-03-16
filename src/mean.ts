@@ -1,0 +1,15 @@
+export function mean(
+  iterable: Iterable<number | null | undefined>,
+): number | undefined {
+  let sum = 0;
+  let count = 0;
+
+  for (const value of iterable) {
+    if (value != null && !Number.isNaN(value)) {
+      sum += value;
+      ++count;
+    }
+  }
+
+  return count ? sum / count : undefined;
+}

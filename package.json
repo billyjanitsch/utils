@@ -1,0 +1,52 @@
+{
+  "name": "@mew/utils",
+  "version": "0.0.0",
+  "description": "General-purpose utility functions",
+  "license": "ISC",
+  "author": {
+    "name": "Billy Janitsch",
+    "email": "billyjanitsch@gmail.com",
+    "url": "https://billyjanitsch.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billyjanitsch/utils.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./ascending": "./dist/ascending.js",
+    "./descending": "./dist/descending.js",
+    "./difference": "./dist/difference.js",
+    "./every": "./dist/every.js",
+    "./filter": "./dist/filter.js",
+    "./identity": "./dist/identity.js",
+    "./map": "./dist/map.js",
+    "./mean": "./dist/mean.js",
+    "./mean-by": "./dist/mean-by.js",
+    "./mode": "./dist/mode.js",
+    "./mode-by": "./dist/mode-by.js",
+    "./reduce": "./dist/reduce.js",
+    "./reverse": "./dist/reverse.js",
+    "./some": "./dist/some.js",
+    "./sort": "./dist/sort.js",
+    "./types": "./dist/types.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "fix": "oxfmt && oxlint --fix",
+    "test": "oxfmt --check && oxlint && vitest run"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0",
+    "oxlint-tsgolint": "^0.17.0",
+    "tsdown": "^0.21.4",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.0"
+  }
+}
