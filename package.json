@@ -23,6 +23,7 @@
     "./difference": "./dist/difference.js",
     "./every": "./dist/every.js",
     "./filter": "./dist/filter.js",
+    "./group-by": "./dist/group-by.js",
     "./identity": "./dist/identity.js",
     "./map": "./dist/map.js",
     "./mean": "./dist/mean.js",
