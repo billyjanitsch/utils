@@ -7,6 +7,8 @@ This is `@mew/utils`, a TypeScript library of general-purpose utility functions.
 - Source: `/src/filter.ts`
 - Tests: `/tests/filter.test.ts`
 
+> When adding a new function, also add it to the `exports` field in `package.json`.
+
 ## Commands
 
 ```sh
