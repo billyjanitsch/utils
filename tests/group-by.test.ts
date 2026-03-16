@@ -19,3 +19,36 @@ test("accepts non-array iterables", () => {
     ]),
   );
 });
+
+test("returns an empty map for an empty iterable", () => {
+  expect(groupBy([], (n) => n)).toEqual(new Map());
+});
+
+test("passes index to accessor", () => {
+  expect(groupBy(["a", "b", "c"], (_item, i) => i % 2 === 0)).toEqual(
+    new Map([
+      [true, ["a", "c"]],
+      [false, ["b"]],
+    ]),
+  );
+});
+
+test("groups all items under one key when accessor returns the same value", () => {
+  expect(groupBy([1, 2, 3], () => "x")).toEqual(new Map([["x", [1, 2, 3]]]));
+});
+
+test("handles object keys by reference", () => {
+  const keyA = { type: "a" };
+  const keyB = { type: "b" };
+  const items = [
+    { key: keyA, val: 1 },
+    { key: keyB, val: 2 },
+    { key: keyA, val: 3 },
+  ];
+  expect(groupBy(items, (item) => item.key)).toEqual(
+    new Map([
+      [keyA, [items[0], items[2]]],
+      [keyB, [items[1]]],
+    ]),
+  );
+});
