@@ -3,12 +3,11 @@ export function intersection<T>(
   ...others: Iterable<T>[]
 ): Set<T> {
   const result = new Set(iterable);
-  const otherSets = others.map((o) => new Set(o));
-  outer: for (const value of result) {
-    for (const other of otherSets) {
-      if (!other.has(value)) {
+  for (const other of others) {
+    const otherSet = new Set(other);
+    for (const value of result) {
+      if (!otherSet.has(value)) {
         result.delete(value);
-        continue outer;
       }
     }
   }
