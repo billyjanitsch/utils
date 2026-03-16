@@ -7,8 +7,6 @@ This is `@mew/utils`, a TypeScript library of general-purpose utility functions.
 - Source: `/src/filter.ts`
 - Tests: `/tests/filter.test.ts`
 
-> When adding a new function, also add it to the `exports` field in `package.json`.
-
 ## Commands
 
 ```sh
@@ -28,6 +26,7 @@ npx vitest run tests/filter.test.ts
 
 - Kebab-case filenames (`mean-by.ts`).
 - Flat directory structure (`/src/filter.ts`).
+- When adding a new function, also add it to the `exports` field in `package.json`.
 
 **Code**
 
