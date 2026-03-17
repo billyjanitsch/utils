@@ -28,6 +28,7 @@
     "./filter": "./dist/filter.js",
     "./find": "./dist/find.js",
     "./group-by": "./dist/group-by.js",
+    "./key-by": "./dist/key-by.js",
     "./identity": "./dist/identity.js",
     "./includes": "./dist/includes.js",
     "./intersection": "./dist/intersection.js",
