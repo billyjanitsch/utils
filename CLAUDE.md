@@ -26,7 +26,6 @@ npx vitest run tests/filter.test.ts
 
 - Kebab-case filenames (`mean-by.ts`).
 - Flat directory structure (`/src/filter.ts`).
-- Add new functions to the `exports` field in `package.json`.
 
 **Utility functions**
 
