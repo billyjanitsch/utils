@@ -22,6 +22,8 @@
     "./at": "./dist/at.js",
     "./clamp": "./dist/clamp.js",
     "./descending": "./dist/descending.js",
+    "./deviation": "./dist/deviation.js",
+    "./deviation-by": "./dist/deviation-by.js",
     "./difference": "./dist/difference.js",
     "./disjoint": "./dist/disjoint.js",
     "./every": "./dist/every.js",
