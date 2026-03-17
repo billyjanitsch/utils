@@ -50,6 +50,8 @@
     "./sum-by": "./dist/sum-by.js",
     "./types": "./dist/types.js",
     "./union": "./dist/union.js",
+    "./variance": "./dist/variance.js",
+    "./variance-by": "./dist/variance-by.js",
     "./package.json": "./package.json"
   },
   "scripts": {
