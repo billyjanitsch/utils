@@ -1,5 +1,12 @@
 import type { Accessor } from "./types";
 
+/**
+ * Returns the most frequently occurring value produced by `accessor`, ignoring null, undefined, and NaN values.
+ *
+ * @param iterable - The iterable to search.
+ * @param accessor - A function called with each element and its index that returns the value to compare.
+ * @returns The modal accessor value, or `undefined` if there are no valid values.
+ */
 export function modeBy<T, U>(
   iterable: Iterable<T>,
   accessor: Accessor<T, U>,
