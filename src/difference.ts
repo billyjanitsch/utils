@@ -1,3 +1,10 @@
+/**
+ * Returns a set of elements in `iterable` that are not in any of `others`.
+ *
+ * @param iterable - The base iterable.
+ * @param others - Iterables whose elements are excluded from the result.
+ * @returns A new set containing elements only present in `iterable`.
+ */
 export function difference<T>(
   iterable: Iterable<T>,
   ...others: Iterable<T>[]

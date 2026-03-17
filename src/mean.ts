@@ -1,3 +1,9 @@
+/**
+ * Computes the mean of an iterable of numbers, ignoring null, undefined, and NaN values.
+ *
+ * @param iterable - The iterable of numbers to average.
+ * @returns The mean, or `undefined` if there are no valid values.
+ */
 export function mean(
   iterable: Iterable<number | null | undefined>,
 ): number | undefined {

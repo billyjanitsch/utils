@@ -1,3 +1,9 @@
+/**
+ * Returns the most frequently occurring value in `iterable`, ignoring null, undefined, and NaN values.
+ *
+ * @param iterable - The iterable to search.
+ * @returns The modal value, or `undefined` if there are no valid values.
+ */
 export function mode<T>(
   iterable: Iterable<T | null | undefined>,
 ): T | undefined {
