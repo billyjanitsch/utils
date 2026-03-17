@@ -26,6 +26,7 @@
     "./every": "./dist/every.js",
     "./filter": "./dist/filter.js",
     "./find": "./dist/find.js",
+    "./group-by": "./dist/group-by.js",
     "./identity": "./dist/identity.js",
     "./includes": "./dist/includes.js",
     "./intersection": "./dist/intersection.js",
