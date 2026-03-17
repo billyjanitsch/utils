@@ -6,6 +6,7 @@ test("returns leading elements while predicate holds", () => {
   expect(takeWhile([1, 2, 3, 2, 1], (x) => x < 3)).toEqual([1, 2]);
   expect(takeWhile([1, 2, 3], () => false)).toEqual([]);
   expect(takeWhile([1, 2, 3], () => true)).toEqual([1, 2, 3]);
+  expect(takeWhile([], () => true)).toEqual([]);
 });
 
 test("accepts non-array iterables", () => {

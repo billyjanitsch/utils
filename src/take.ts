@@ -6,12 +6,12 @@
  * @returns An array of the first `count` elements.
  */
 export function take<T>(iterable: Iterable<T>, count: number): T[] {
-  const array = [];
+  const result = [];
 
   for (const item of iterable) {
-    if (array.length >= count) break;
-    array.push(item);
+    if (result.length >= count) break;
+    result.push(item);
   }
 
-  return array;
+  return result;
 }

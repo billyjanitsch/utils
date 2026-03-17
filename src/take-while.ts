@@ -11,13 +11,13 @@ export function takeWhile<T>(
   iterable: Iterable<T>,
   predicate: Predicate<T>,
 ): T[] {
-  const array = [];
+  const result = [];
 
   let index = 0;
   for (const item of iterable) {
     if (!predicate(item, index++)) break;
-    array.push(item);
+    result.push(item);
   }
 
-  return array;
+  return result;
 }
