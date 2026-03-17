@@ -43,6 +43,8 @@
     "./sort": "./dist/sort.js",
     "./subset": "./dist/subset.js",
     "./sum": "./dist/sum.js",
+    "./take": "./dist/take.js",
+    "./take-while": "./dist/take-while.js",
     "./superset": "./dist/superset.js",
     "./sum-by": "./dist/sum-by.js",
     "./types": "./dist/types.js",
