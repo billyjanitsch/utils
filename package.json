@@ -37,6 +37,7 @@
     "./mean-by": "./dist/mean-by.js",
     "./mode": "./dist/mode.js",
     "./mode-by": "./dist/mode-by.js",
+    "./range": "./dist/range.js",
     "./reduce": "./dist/reduce.js",
     "./reverse": "./dist/reverse.js",
     "./some": "./dist/some.js",
