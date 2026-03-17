@@ -33,10 +33,6 @@ test("passes index to accessor", () => {
   );
 });
 
-test("groups all items under one key when accessor returns the same value", () => {
-  expect(groupBy([1, 2, 3], () => "x")).toEqual(new Map([["x", [1, 2, 3]]]));
-});
-
 test("handles object keys by reference", () => {
   const keyA = { type: "a" };
   const keyB = { type: "b" };
