@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "files": [],
+  "include": ["src/**/*.ts", "tests/**/*.ts", "*.ts"],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "declaration": true,
@@ -22,5 +22,5 @@
     "target": "ESNext",
     "types": []
   },
-  "exclude": ["node_modules"]
+  "exclude": ["dist", "node_modules"]
 }

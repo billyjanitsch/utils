@@ -4,18 +4,12 @@ This is `@mew/utils`, a TypeScript library of general-purpose utility functions.
 
 ## Structure
 
-- Source: `/src/filter.ts`
-- Tests: `/tests/filter.test.ts`
+- Source: `src/filter.ts`
+- Tests: `tests/filter.test.ts`
 
 ## Commands
 
 ```sh
-# Full CI check: format, lint, typecheck, unit tests
-npm test
-
-# Auto-fix formatting and lint issues
-npm run fix
-
 # Run a single test file
 npx vitest run tests/filter.test.ts
 ```
@@ -25,7 +19,7 @@ npx vitest run tests/filter.test.ts
 **Structure**
 
 - Kebab-case filenames (`mean-by.ts`).
-- Flat directory structure (`/src/filter.ts`).
+- Flat directory structure (`src/filter.ts`).
 
 **Utility functions**
 
