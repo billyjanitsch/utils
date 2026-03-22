@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/billyjanitsch/utils.git",
+    "url": "git+https://github.com/billyjanitsch/mew.git",
     "directory": "packages/utils"
   },
   "files": [
