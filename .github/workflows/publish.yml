@@ -15,16 +15,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 24
           registry-url: "https://registry.npmjs.org"
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
       - name: Build
-        run: pnpm --filter @mew/utils build
+        run: npm run build
       - name: Publish to registry
-        run: pnpm --filter @mew/utils publish
+        run: npm publish

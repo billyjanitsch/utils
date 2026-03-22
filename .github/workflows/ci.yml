@@ -9,14 +9,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          cache: pnpm
+          cache: npm
           node-version: 24
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
       - name: Run tests
-        run: pnpm test
+        run: npm test

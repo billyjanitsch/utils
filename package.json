@@ -1,15 +1,33 @@
 {
-  "private": true,
+  "name": "@mew/utils",
+  "version": "0.0.6",
+  "description": "General-purpose utility functions",
+  "license": "ISC",
+  "author": {
+    "name": "Billy Janitsch",
+    "email": "billyjanitsch@gmail.com",
+    "url": "https://billyjanitsch.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billyjanitsch/utils.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "tsdown",
     "fix": "oxfmt && oxlint --fix",
-    "test": "oxfmt --check && oxlint && pnpm -r test"
+    "test": "oxfmt --check && oxlint && vitest run"
   },
   "devDependencies": {
-    "oxfmt": "catalog:",
-    "oxlint": "catalog:",
-    "oxlint-tsgolint": "catalog:",
-    "typescript": "catalog:"
-  },
-  "packageManager": "pnpm@10.32.1"
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0",
+    "oxlint-tsgolint": "^0.17.0",
+    "tsdown": "^0.21.4",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.0"
+  }
 }
