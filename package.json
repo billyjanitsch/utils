@@ -3,12 +3,9 @@
   "scripts": {
     "build": "pnpm -r build",
     "fix": "oxfmt && oxlint --fix",
-    "test": "oxfmt --check && oxlint && pnpm -r test",
-    "release": "pnpm -r build && changeset version && changeset publish"
+    "test": "oxfmt --check && oxlint && pnpm -r test"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.6.0",
-    "@changesets/cli": "^2.30.0",
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
     "oxlint-tsgolint": "catalog:",
