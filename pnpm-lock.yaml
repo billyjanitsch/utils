@@ -4,6 +4,12 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    typescript:
+      specifier: ~5.9.3
+      version: 5.9.3
+
 importers:
 
   .:
@@ -17,6 +23,9 @@ importers:
       oxlint-tsgolint:
         specifier: ^0.17.0
         version: 0.17.1
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
 
   packages/utils:
     devDependencies:
@@ -24,7 +33,7 @@ importers:
         specifier: ^0.21.4
         version: 0.21.4(typescript@5.9.3)
       typescript:
-        specifier: ~5.9.3
+        specifier: 'catalog:'
         version: 5.9.3
       vitest:
         specifier: ^4.1.0
