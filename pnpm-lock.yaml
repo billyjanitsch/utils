@@ -6,22 +6,37 @@ settings:
 
 catalogs:
   default:
+    oxfmt:
+      specifier: ^0.41.0
+      version: 0.41.0
+    oxlint:
+      specifier: ^1.56.0
+      version: 1.56.0
+    oxlint-tsgolint:
+      specifier: ^0.17.1
+      version: 0.17.1
+    tsdown:
+      specifier: ^0.21.4
+      version: 0.21.4
     typescript:
       specifier: ~5.9.3
       version: 5.9.3
+    vitest:
+      specifier: ^4.1.0
+      version: 4.1.0
 
 importers:
 
   .:
     devDependencies:
       oxfmt:
-        specifier: ^0.41.0
+        specifier: 'catalog:'
         version: 0.41.0
       oxlint:
-        specifier: ^1.56.0
+        specifier: 'catalog:'
         version: 1.56.0(oxlint-tsgolint@0.17.1)
       oxlint-tsgolint:
-        specifier: ^0.17.0
+        specifier: 'catalog:'
         version: 0.17.1
       typescript:
         specifier: 'catalog:'
@@ -30,13 +45,13 @@ importers:
   packages/utils:
     devDependencies:
       tsdown:
-        specifier: ^0.21.4
+        specifier: 'catalog:'
         version: 0.21.4(typescript@5.9.3)
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
       vitest:
-        specifier: ^4.1.0
+        specifier: 'catalog:'
         version: 4.1.0(vite@8.0.1)
 
 packages:

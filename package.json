@@ -1,13 +1,15 @@
 {
   "private": true,
   "scripts": {
+    "build": "pnpm -r build",
     "fix": "oxfmt && oxlint --fix",
     "test": "oxfmt --check && oxlint && pnpm -r test"
   },
   "devDependencies": {
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
-    "oxlint-tsgolint": "^0.17.0",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
     "typescript": "catalog:"
-  }
+  },
+  "packageManager": "pnpm@10.32.1"
 }

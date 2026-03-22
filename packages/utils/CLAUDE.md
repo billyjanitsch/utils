@@ -1,24 +1,17 @@
 # CLAUDE.md
 
-This is a pnpm monorepo containing `@mew/utils`, a TypeScript library of general-purpose utility functions.
+This is `@mew/utils`, a TypeScript library of general-purpose utility functions.
 
 ## Structure
 
-- Package: `packages/utils/`
-- Source: `packages/utils/src/filter.ts`
-- Tests: `packages/utils/tests/filter.test.ts`
+- Source: `src/filter.ts`
+- Tests: `tests/filter.test.ts`
 
 ## Commands
 
 ```sh
-# Full CI check: format, lint, typecheck, unit tests
-pnpm test
-
-# Auto-fix formatting and lint issues
-pnpm run fix
-
 # Run a single test file
-cd packages/utils && npx vitest run tests/filter.test.ts
+npx vitest run tests/filter.test.ts
 ```
 
 ## Conventions
@@ -26,7 +19,7 @@ cd packages/utils && npx vitest run tests/filter.test.ts
 **Structure**
 
 - Kebab-case filenames (`mean-by.ts`).
-- Flat directory structure (`/src/filter.ts`).
+- Flat directory structure (`src/filter.ts`).
 
 **Utility functions**
 
