@@ -1,3 +1,7 @@
-# Mew
+# Utils
 
-A collection of general-purpose utilities.
+General-purpose utility functions.
+
+```
+npm install @mew/utils
+```
