@@ -14,12 +14,12 @@ importers:
       oxlint:
         specifier: ^1.56.0
         version: 1.56.0(oxlint-tsgolint@0.17.1)
-
-  packages/utils:
-    devDependencies:
       oxlint-tsgolint:
         specifier: ^0.17.0
         version: 0.17.1
+
+  packages/utils:
+    devDependencies:
       tsdown:
         specifier: ^0.21.4
         version: 0.21.4(typescript@5.9.3)
