@@ -11,13 +11,13 @@ This is `@mew/utils`, a TypeScript library of general-purpose utility functions.
 
 ```sh
 # Full CI check: format, lint, typecheck, unit tests
-npm test
+pnpm test
 
 # Auto-fix formatting and lint issues
-npm run fix
+pnpm run fix
 
 # Run a single test file
-npx vitest run tests/filter.test.ts
+pnpm exec vitest run tests/filter.test.ts
 ```
 
 ## Conventions
