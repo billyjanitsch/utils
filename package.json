@@ -23,11 +23,11 @@
     "test": "oxfmt --check && oxlint && vitest run"
   },
   "devDependencies": {
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
-    "oxlint-tsgolint": "^0.17.0",
-    "tsdown": "^0.21.4",
-    "typescript": "~5.9.3",
-    "vitest": "^4.1.0"
+    "oxfmt": "^0.42.0",
+    "oxlint": "^1.57.0",
+    "oxlint-tsgolint": "^0.17.4",
+    "tsdown": "^0.21.5",
+    "typescript": "~6.0.2",
+    "vitest": "^4.1.1"
   }
 }
