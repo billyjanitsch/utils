@@ -6,6 +6,8 @@ import type { Predicate } from "./types";
  * @param iterable - The iterable to search.
  * @param predicate - A function called with each element and its index.
  * @returns The first matching element, or `undefined` if none is found.
+ * @example
+ * find([1, 2, 3], x => x > 1) // 2
  */
 export function find<T>(
   iterable: Iterable<T>,

@@ -7,6 +7,9 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to index.
  * @param key - A function called with each element and its index that returns the key.
  * @returns A map from each key to the last element with that key.
+ * @example
+ * keyBy([{ id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }], d => d.id)
+ * // Map { 1 => { id: 1, name: 'Alice' }, 2 => { id: 2, name: 'Bob' } }
  */
 export function keyBy<T, K>(
   iterable: Iterable<T>,

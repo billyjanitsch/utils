@@ -5,6 +5,8 @@ import { variance } from "./variance";
  *
  * @param iterable - The iterable of numbers to compute the standard deviation of.
  * @returns The standard deviation, or `undefined` if there are no valid values.
+ * @example
+ * deviation([2, 8]) // 3
  */
 export function deviation(
   iterable: Iterable<number | null | undefined>,

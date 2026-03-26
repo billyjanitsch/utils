@@ -4,6 +4,8 @@
  * @param iterable - The base iterable.
  * @param others - Additional iterables to intersect with.
  * @returns A new set containing only elements common to all inputs.
+ * @example
+ * intersection([1, 2, 3], [2, 3, 4]) // Set { 2, 3 }
  */
 export function intersection<T>(
   iterable: Iterable<T>,

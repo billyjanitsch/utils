@@ -3,6 +3,8 @@
  *
  * @param iterable - The iterable of numbers to sum.
  * @returns The sum, or `undefined` if there are no valid values.
+ * @example
+ * sum([1, 2, null, 3]) // 6
  */
 export function sum(
   iterable: Iterable<number | null | undefined>,

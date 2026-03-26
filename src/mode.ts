@@ -3,6 +3,8 @@
  *
  * @param iterable - The iterable to search.
  * @returns The modal value, or `undefined` if there are no valid values.
+ * @example
+ * mode([1, 2, 2, 3]) // 2
  */
 export function mode<T>(
   iterable: Iterable<T | null | undefined>,

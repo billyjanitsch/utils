@@ -6,6 +6,8 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to compute the variance of.
  * @param accessor - A function called with each element and its index that returns a numeric value.
  * @returns The variance, or `undefined` if there are no valid values.
+ * @example
+ * varianceBy([{ v: 2 }, { v: 8 }], d => d.v) // 9
  */
 export function varianceBy<T>(
   iterable: Iterable<T>,

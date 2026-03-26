@@ -6,6 +6,8 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to sum.
  * @param accessor - A function called with each element and its index that returns a numeric value.
  * @returns The sum, or `undefined` if there are no valid values.
+ * @example
+ * sumBy([{ v: 1 }, { v: 2 }, { v: 3 }], d => d.v) // 6
  */
 export function sumBy<T>(
   iterable: Iterable<T>,
