@@ -4,6 +4,8 @@
  * @param iterable - The iterable to chunk.
  * @param size - The size of each chunk. Must be a positive integer.
  * @returns An array of arrays, each of length `size` (the last may be smaller).
+ * @example
+ * chunk([1, 2, 3, 4, 5], 2) // [[1, 2], [3, 4], [5]]
  */
 export function chunk<T>(iterable: Iterable<T>, size: number): T[][] {
   if (!Number.isInteger(size) || size <= 0) {

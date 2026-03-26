@@ -3,6 +3,8 @@
  *
  * @param iterable - The iterable of numbers to compute the variance of.
  * @returns The variance, or `undefined` if there are no valid values.
+ * @example
+ * variance([2, 8]) // 9
  */
 export function variance(
   iterable: Iterable<number | null | undefined>,

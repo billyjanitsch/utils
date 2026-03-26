@@ -4,6 +4,8 @@
  * @param iterable - The iterable to drop from.
  * @param count - The number of elements to drop.
  * @returns An array of all elements after the first `count`.
+ * @example
+ * drop([1, 2, 3, 4], 2) // [3, 4]
  */
 export function drop<T>(iterable: Iterable<T>, count: number): T[] {
   const result = [];

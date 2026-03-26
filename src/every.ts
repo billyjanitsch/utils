@@ -6,6 +6,8 @@ import type { Predicate } from "./types";
  * @param iterable - The iterable to test.
  * @param predicate - A function called with each element and its index.
  * @returns `true` if all elements pass, `false` otherwise.
+ * @example
+ * every([2, 4, 6], x => x % 2 === 0) // true
  */
 export function every<T>(
   iterable: Iterable<T>,

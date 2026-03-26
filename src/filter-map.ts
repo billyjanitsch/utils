@@ -4,6 +4,8 @@
  * @param map - The map to filter.
  * @param predicate - A function called with each value and key.
  * @returns A new map containing only the entries that passed the predicate.
+ * @example
+ * filterMap(new Map([['a', 1], ['b', 2]]), v => v > 1) // Map { 'b' => 2 }
  */
 export function filterMap<K, V>(
   map: Map<K, V>,

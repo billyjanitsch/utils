@@ -6,6 +6,8 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to average.
  * @param accessor - A function called with each element and its index that returns a numeric value.
  * @returns The mean, or `undefined` if there are no valid values.
+ * @example
+ * meanBy([{ v: 1 }, { v: 2 }, { v: 3 }], d => d.v) // 2
  */
 export function meanBy<T>(
   iterable: Iterable<T>,

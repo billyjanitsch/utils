@@ -7,6 +7,8 @@ import type { Reducer } from "./types";
  * @param reducer - A function called with the accumulator, current element, and its index.
  * @param initialValue - The initial accumulator value.
  * @returns The final accumulated value.
+ * @example
+ * reduce([1, 2, 3], (acc, x) => acc + x, 0) // 6
  */
 export function reduce<T, U>(
   iterable: Iterable<T>,

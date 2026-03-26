@@ -6,6 +6,8 @@ import type { Predicate } from "./types";
  * @param iterable - The iterable to filter.
  * @param predicate - A function called with each element and its index.
  * @returns An array of elements that passed the predicate.
+ * @example
+ * filter([1, 2, 3, 4], x => x % 2 === 0) // [2, 4]
  */
 export function filter<T>(iterable: Iterable<T>, predicate: Predicate<T>): T[] {
   const array = [];

@@ -6,6 +6,8 @@ import type { Predicate } from "./types";
  * @param iterable - The iterable to take from.
  * @param predicate - A function called with each element and its index.
  * @returns An array of leading elements that passed the predicate.
+ * @example
+ * takeWhile([1, 2, 3, 1], x => x < 3) // [1, 2]
  */
 export function takeWhile<T>(
   iterable: Iterable<T>,

@@ -6,6 +6,8 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to count.
  * @param key - A function called with each element and its index that returns the group key.
  * @returns A map from each key to the number of elements with that key.
+ * @example
+ * countBy(['a', 'b', 'a'], x => x) // Map { 'a' => 2, 'b' => 1 }
  */
 export function countBy<T, K>(
   iterable: Iterable<T>,

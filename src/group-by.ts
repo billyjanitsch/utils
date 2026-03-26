@@ -6,6 +6,9 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to group.
  * @param key - A function called with each element and its index that returns the group key.
  * @returns A map from each key to the array of elements with that key.
+ * @example
+ * groupBy(['one', 'two', 'three'], s => s.length)
+ * // Map { 3 => ['one', 'two'], 5 => ['three'] }
  */
 export function groupBy<T, K>(
   iterable: Iterable<T>,

@@ -6,6 +6,8 @@ import type { Accessor } from "./types";
  * @param iterable - The iterable to search.
  * @param accessor - A function called with each element and its index that returns the value to compare.
  * @returns The modal accessor value, or `undefined` if there are no valid values.
+ * @example
+ * modeBy([{ v: 1 }, { v: 2 }, { v: 2 }], d => d.v) // 2
  */
 export function modeBy<T, U>(
   iterable: Iterable<T>,

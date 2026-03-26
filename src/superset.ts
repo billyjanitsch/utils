@@ -4,6 +4,9 @@
  * @param iterable - The candidate superset.
  * @param other - The iterable to check membership against.
  * @returns `true` if `iterable` is a superset of `other`, `false` otherwise.
+ * @example
+ * superset([1, 2, 3], [1, 2]) // true
+ * superset([1, 2], [1, 2, 3]) // false
  */
 export function superset<T>(
   iterable: Iterable<T>,

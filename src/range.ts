@@ -5,6 +5,9 @@
  * @param end - The end of the range (exclusive).
  * @param step - The step between each number. Defaults to `1`.
  * @returns An array of numbers.
+ * @example
+ * range(0, 5)    // [0, 1, 2, 3, 4]
+ * range(0, 6, 2) // [0, 2, 4]
  */
 export function range(start: number, end: number, step = 1): number[] {
   if (step === 0) {

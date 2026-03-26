@@ -3,6 +3,8 @@
  *
  * @param iterable - The iterable to iterate over.
  * @param callback - A function called with each item and its index.
+ * @example
+ * forEach(['a', 'b'], (item, i) => console.log(i, item)) // logs "0 a", "1 b"
  */
 export function forEach<T>(
   iterable: Iterable<T>,

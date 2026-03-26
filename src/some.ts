@@ -6,6 +6,8 @@ import type { Predicate } from "./types";
  * @param iterable - The iterable to test.
  * @param predicate - A function called with each element and its index.
  * @returns `true` if any element passes, `false` otherwise.
+ * @example
+ * some([1, 2, 3], x => x > 2) // true
  */
 export function some<T>(
   iterable: Iterable<T>,
